@@ -1,0 +1,15 @@
+<div class="col-md-3">
+  <form style="margin: 20px;" class="form-horizontal" (ngSubmit)="login()">
+    <label class="row">
+      Usuário:
+      <input class="form-control" name="email" [(ngModel)]="credenciais.email" type="email">
+    </label>
+    <label class="row">
+      Senha:
+      <input class="form-control" name="senha" [(ngModel)]="credenciais.senha" type="password">
+    </label>
+    <div class="row" style="margin-top: 10px;">
+      <button class="btn btn-info">Login</button>
+    </div>
+  </form>
+</div>
